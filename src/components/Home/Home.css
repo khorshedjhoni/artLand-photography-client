@@ -1,0 +1,31 @@
+.container img{
+        margin: 0 auto;
+        height: 80vh;
+        margin-bottom: 20px;
+}
+.container{
+    position: relative;
+  text-align: center;
+  color: white;
+  /* background: linear-gradient(to right,  #151515 0%,rgba(21, 21, 21, 0) 100%); */
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: rgb(242, 233, 233);
+    
+  }
+  .about{
+    display: flex;
+    /* border: 2px solid grey; */
+    margin: 20px auto;
+  }
+.support{
+    display: flex;
+}
+.chose-container{
+    border: 2px solid grey;
+}
+  

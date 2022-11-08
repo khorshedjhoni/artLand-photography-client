@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 const SingleCard = ({service}) => {
     const { _id, img, name, details,price,rating } = service;
@@ -24,7 +25,7 @@ const SingleCard = ({service}) => {
         <h6>Price: {price}</h6>
         <h6>Rating: {rating}</h6>
     </div>
-    <Button className='mx-auto m-2' variant='dark'>View details</Button>
+    <Button className='mx-auto m-2' variant='dark'><Link className='link' to ={`/services/${_id}`}>View All</Link></Button>
   </div>
     </div>
 
