@@ -3,9 +3,11 @@ import { useState } from 'react';
 import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import useTitle from '../../hooks/useTitle';
 import { AuthContext } from '../AuthProvider/Authprovider';
 const SignUp = () => {
     const [error,setError] = useState('')
+    useTitle('SignUp')
     const {createUser,updateUserProfile} = useContext(AuthContext)
 
     const handleSubmit = event =>{

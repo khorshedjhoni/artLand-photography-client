@@ -5,8 +5,10 @@ import Button from 'react-bootstrap/Button';
 import image from '../../assests/banner/banner.png'
 import image1 from '../../assests/about/about -me.jpg'
 import './Home.css'
+import useTitle from '../../hooks/useTitle';
 
 const Home = () => {
+    useTitle('Home')
     const [services,setServices] = useState([])
     useEffect(()=>{
         fetch('http://localhost:5000/services')
