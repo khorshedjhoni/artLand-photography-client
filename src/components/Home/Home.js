@@ -50,7 +50,7 @@ const Home = () => {
       
         <div class="col-sm-12 mx-auto w-75 chose-container">
           <h4><span>Why Choose</span> ArtLand?</h4>
-          <p>When you choose artLand, you'll feel the benefit of 10 years' experience of photography. Because I know the digital world and we know that how to handle it. With working knowledge of photography I capture your best moment.</p>
+          <p>When you choose artLand,you'll feel the benefit of 10 years' experience of photography. Because I know the digital world and we know that how to handle it. With working knowledge of photography I capture your best moment.</p>
           <br></br>
           <div className='support'>
           <div>
