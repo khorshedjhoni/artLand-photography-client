@@ -24,13 +24,9 @@ const Home = () => {
                 PHOTOGRAPHS!!
                  </h2>
              <div className='me-2'>
-             <Button variant='info'><Link className='link p-2' to='/login'>Login</Link></Button>
-                 
-             </div>
-                 
+             <Button variant='info'><Link className='link p-2' to='/login'>Login</Link></Button>   
+             </div>   
             </div>
-            
-            
             </div>
             <div className='cards'>
              {
@@ -40,14 +36,12 @@ const Home = () => {
                     ></ServiceCard>)
                 }
         </div>
-      
         <div className='m-2'>
-        <Button variant="secondary"><Link className='link text-black'  to='/services'>Sell all</Link></Button>
+        <Button variant="secondary"><Link className='link text-white'  to='/services'>Sell all</Link></Button>
         </div>
                 <div>
                 <div>
     <div >
-      
         <div class="col-sm-12 mx-auto w-75 chose-container">
           <h4><span>Why Choose</span> ArtLand?</h4>
           <p>When you choose artLand,you'll feel the benefit of 10 years' experience of photography. Because I know the digital world and we know that how to handle it. With working knowledge of photography I capture your best moment.</p>
@@ -67,18 +61,12 @@ const Home = () => {
          </div>
           </div>
         </div>
-       
-       
-       
-      
-        
-      
+     
     </div>
   </div>
-
                 </div>
-        <div className='about'>
-            <div className='w-50 ms-5 '>
+        <div className='about w-75'>
+            <div className='w-50  '>
             <img src={image1} alt=''></img>
             </div>
             <div className='m-4 me-5 '>

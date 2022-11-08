@@ -19,7 +19,7 @@
   }
   .about{
     display: flex;
-    /* border: 2px solid grey; */
+    border: 2px solid grey;
     margin: 20px auto;
   }
 .support{
