@@ -59,10 +59,10 @@ const AddServices = () => {
         <Form.Label>Details</Form.Label>
         <Form.Control name="details" as="textarea" rows={3} placeholder="Details" />
       </Form.Group>
-      <input className='button' type="submit" value="Place Your Order" />
+      <input className='button' type="submit" value="Add Services" />
       {/* <button>submit</button> */}
     </Form>
-    {/* <button>submit</button> */}
+    
         </div>
     );
 };

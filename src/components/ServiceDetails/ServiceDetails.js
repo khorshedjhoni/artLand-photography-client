@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
+import { AuthContext } from '../AuthProvider/Authprovider';
 import Review from '../Review/Review';
 import './ServiceDetails.css'
 
 const ServiceDetails = () => {
+    const{user} = useContext(AuthContext)
     useTitle('Details')
     const detailsData = useLoaderData()
     const [reviews,setReviews] = useState([])
@@ -50,6 +52,15 @@ const ServiceDetails = () => {
                     ></Review>)
                 }
            </div>
+
+           {/* {
+            user?.email?
+            <>
+
+            </>
+            :<>
+            </>
+           } */}
         </div>
     );
 };
