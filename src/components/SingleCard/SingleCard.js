@@ -2,6 +2,9 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+
 
 const SingleCard = ({service}) => {
     useTitle('Services')
@@ -9,7 +12,12 @@ const SingleCard = ({service}) => {
     return (
         <div> 
         <div className="card">
-    <img src={img} alt="" />
+    
+    <PhotoProvider>
+      <PhotoView src={img}>
+        <img src={img} alt="" />
+      </PhotoView>
+    </PhotoProvider>
     <div className="card-body">
       <h2>{name}</h2>
       <p>
