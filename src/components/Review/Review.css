@@ -1,0 +1,12 @@
+.review-container{
+    /* border: 2px solid gray; */
+    text-align: center;
+    height: 150px;
+    width: 400px;
+    margin: 30px auto;
+    padding: 10px;
+}
+.img-review{
+    size: 30px;
+    
+}
