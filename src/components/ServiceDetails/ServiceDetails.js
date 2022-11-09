@@ -42,6 +42,7 @@ const ServiceDetails = () => {
            </div>
 
            <div className='shadow-lg p-3 mb-5 bg-white rounded'>
+           <h3 className='text-align-center'>Review of client</h3>
            {
                     reviews.map(review => <Review
                         key={review._id}

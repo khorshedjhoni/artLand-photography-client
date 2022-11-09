@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import Button from 'react-bootstrap/Button';
@@ -6,8 +6,10 @@ import image from '../../assests/banner/banner.png'
 import image1 from '../../assests/about/about -me.jpg'
 import './Home.css'
 import useTitle from '../../hooks/useTitle';
+import { AuthContext } from '../AuthProvider/Authprovider';
 
 const Home = () => {
+    const{user,logOut} = useContext(AuthContext)
     useTitle('Home')
     const [services,setServices] = useState([])
     useEffect(()=>{
