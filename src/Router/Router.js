@@ -3,6 +3,7 @@ import AddServices from "../components/AddServices/AddServices";
 import Blog from "../components/Blog/Blog";
 import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
+import MyReviews from "../components/MyReviews/MyReviews";
 import ServiceDetails from "../components/ServiceDetails/ServiceDetails";
 import Services from "../components/Services/Services";
 import SignUp from "../components/SingUp/SignUp";
@@ -41,7 +42,11 @@ const router = createBrowserRouter([
             {
                 path:'addServices',
                 element:<AddServices></AddServices>,
-                // loader:async({params})=>fetch(`https://artland-photography-server.vercel.app/services/${params.id}`)
+               
+            },
+            {
+                path:'myReviews',
+                element:<MyReviews></MyReviews>
             }
         ]
     }
