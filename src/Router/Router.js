@@ -36,12 +36,12 @@ const router = createBrowserRouter([
             {
                 path:'services/:id',
                 element:<ServiceDetails></ServiceDetails>,
-                loader:async({params})=>fetch(`http://localhost:5000/service/${params.id}`)
+                loader:async({params})=>fetch(`https://artland-photography-server.vercel.app/service/${params.id}`)
             },
             {
                 path:'addServices',
                 element:<AddServices></AddServices>,
-                // loader:async({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+                // loader:async({params})=>fetch(`https://artland-photography-server.vercel.app/services/${params.id}`)
             }
         ]
     }

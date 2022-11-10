@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import SingleCard from '../SingleCard/SingleCard';
 import Button from 'react-bootstrap/Button';
+import { AuthContext } from '../AuthProvider/Authprovider';
 
 
 const Services = () => {
     const [services,setServices] = useState([])
+    const {setLoading} = useContext(AuthContext)
+    
     useEffect(()=>{
-        fetch('http://localhost:5000/service')
+        fetch('https://artland-photography-server.vercel.app/service')
         .then(res =>res.json())
         .then(data => setServices(data))
+        
     },[])
     return (
         <div>

@@ -15,7 +15,7 @@ const Login = () => {
     const [error,setError] = useState('')
   const navigate = useNavigate()
     // const {singIn,providerLogin}= useContext(AuthContext);
-    const {singIn,providerLogin} = useContext(AuthContext)
+    const {singIn,providerLogin,} = useContext(AuthContext)
     const googleProvider = new GoogleAuthProvider()
     const location = useLocation()
     useTitle('Login')
