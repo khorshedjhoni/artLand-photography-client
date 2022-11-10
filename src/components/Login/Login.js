@@ -16,11 +16,12 @@ const Login = () => {
   const navigate = useNavigate()
     // const {singIn,providerLogin}= useContext(AuthContext);
     const {singIn,providerLogin} = useContext(AuthContext)
+    const googleProvider = new GoogleAuthProvider()
     const location = useLocation()
     useTitle('Login')
     const from = location.state?.from?.pathname || '/'
 
-    const googleProvider = new GoogleAuthProvider()
+    
     
 
     const handleGoogleSignIn = ()=>{
@@ -28,6 +29,7 @@ const Login = () => {
         .then(result =>{
             const user = result.user;
             console.log(user)
+            navigate(from,{replace:true})
         })
         .catch(error=>console.error(error))
     }

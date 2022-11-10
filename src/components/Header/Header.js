@@ -30,6 +30,7 @@ const Header = () => {
                     
               
                     <button className='bg-dark text-white' onClick={handleLogOut}>logOut</button>
+                    <NavLink className='link' to='/addServices'>Add Services</NavLink> 
               
                     </>
                     :
@@ -39,7 +40,7 @@ const Header = () => {
                     </> 
                 }  
                 </NavLink>     
-            <NavLink className='link' to='/addServices'>Add Services</NavLink>            
+                       
             <NavLink className='link' to='/services'>Services</NavLink>
             
           </Nav>
