@@ -13,12 +13,12 @@ const AddServices = () => {
         const details = form.details.value;
         const img = form.img.value;
         const rating = form.rating.value;
-        console.log(name,price)
+       
 
         const services = {
             name,
             rating,
-            img:img,
+            img,
             price,
             details,
 

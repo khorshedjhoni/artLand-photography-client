@@ -1,8 +1,9 @@
 import React from 'react';
 import './Review.css'
 
-const Review = ({review}) => {
-    const {name,image,rating,text} = review
+const Review = ({reviewes}) => {
+    const {customer,imgURL,review,service,serviceName } = reviewes
+    console.log(review)
     return (
         
         <div>
@@ -10,17 +11,20 @@ const Review = ({review}) => {
             <div className='review-container '>
             <div className=' justify-content-between'>
                <div className='img-review'>
-               <img className='w-25 rounded-circle' src={image} alt=""></img>
+               <img className='w-25 rounded-circle' src={imgURL} alt=""></img>
                </div>
                <div>
-                <h6>{name}</h6>
+                <h6>{customer}</h6>
+               </div>   
+               <div>
+                <h6>{serviceName}</h6>
                </div>   
             </div>
             <div>
-                {text}
+                
             </div>
             <div>
-                <p>Rating: {rating}</p>
+                <p>{review}</p>
             </div>
         </div>
         </div>
