@@ -70,7 +70,8 @@ const MyReviews = () => {
            }
            </div>
 
-           {
+          <div className='d-flex mb-5 '>
+          {
             reviews.map(reviewes=> <AllMyReview 
             key={reviewes._id}
             reviewes = {reviewes}
@@ -79,6 +80,7 @@ const MyReviews = () => {
 
             ></AllMyReview>)
            }
+          </div>
         </div>
     );
 };

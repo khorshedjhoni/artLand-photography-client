@@ -1,4 +1,13 @@
 .review-container{
-    height: 300px;
-    width: 50vh;
+    /* height: 50vh;
+    width: 50vh; */
+    /* margin-bottom: 50px; */
+}
+.img{
+    height: 80px;
+    width: 50px;
+}
+.container-review{
+    border: 2px solid grey;
+
 }

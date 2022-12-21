@@ -7,6 +7,8 @@ import image1 from '../../assests/about/about -me.jpg'
 import './Home.css'
 import useTitle from '../../hooks/useTitle';
 import { AuthContext } from '../AuthProvider/Authprovider';
+import Banner from '../Banner/Banner';
+import About from '../About/About';
 
 const Home = () => {
     const{user,logOut} = useContext(AuthContext)
@@ -18,20 +20,10 @@ const Home = () => {
         .then(data => setServices(data))
     },[])
     return (
+        
         <div>
-            <div className="container">
-            <div className='img'>
-              <img src={image} alt=''></img>
-            </div>
-            <div className='centered'>
-                <h2>PASSION IS THE ESSENCE OF CLICKING GREAT <br />
-                PHOTOGRAPHS!!
-                 </h2>
-             <div className='me-2'>
-             <Button variant='info'><Link className='link p-2' to='/login'>Login</Link></Button>   
-             </div>   
-            </div>
-            </div>
+            <Banner></Banner>
+            
             <div className='cards'>
              {
                     services.map(service => <ServiceCard
@@ -69,7 +61,7 @@ const Home = () => {
     </div>
   </div>
                 </div>
-        <div className='about w-75'>
+        {/* <div className='about w-75'>
             <div className='w-50  '>
             <img src={image1} alt=''></img>
             </div>
@@ -81,6 +73,9 @@ const Home = () => {
                 I graduate my cinematography and photography degree from New South Wales college.
                  </p>
             </div>
+        </div> */}
+        <div>
+            <About></About>
         </div>
         </div>
         
